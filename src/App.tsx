@@ -9,7 +9,7 @@ import DashboardLayout   from './pages/dashboard/DashboardLayout'
 import DashboardPage     from './pages/dashboard/DashboardPage'
 import StatsPage         from './pages/dashboard/StatsPage'
 
-/**
+/** 
  * App.tsx — Composant racine.
  * Utilise BrowserRouter, Routes, Route (React Router DOM).
  * TaskProvider encapsule toute l'application (Context + useReducer).
