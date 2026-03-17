@@ -13,7 +13,7 @@ const CAT_ICON: Record<TaskCategory, string> = {
 function Donut({ pct }: { pct: number }) {
   const r = 54, circ = 2 * Math.PI * r
   const dash = (pct / 100) * circ
-  return (
+  return (  
     <div style={{ position:'relative', width:148, height:148, flexShrink:0 }}>
       <svg viewBox="0 0 120 120" style={{ width:148, height:148 }}>
         <circle cx="60" cy="60" r={r} fill="none" stroke="var(--s4)" strokeWidth={9}/>

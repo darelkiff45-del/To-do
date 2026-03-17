@@ -22,7 +22,7 @@ export default function TasksPage() {
   const SEL = "bg-[var(--bg-surface)] border border-[var(--border)] rounded-xl px-3 py-2 text-sm text-[var(--text-1)] focus:outline-none focus:border-[var(--primary)] transition-colors"
   const filterBtn = (active: boolean) => `px-3 py-1 rounded-full text-xs font-medium transition-all ${active ? 'bg-[var(--primary)] text-white' : 'bg-[var(--bg-card)] text-[var(--text-2)] hover:bg-[var(--bg-hover)]'}`
   const catBtn    = (active: boolean) => `px-3 py-1 rounded-full text-xs font-medium transition-all ${active ? 'bg-[var(--accent)] text-[var(--bg-base)]' : 'bg-[var(--bg-card)] text-[var(--text-2)] hover:bg-[var(--bg-hover)]'}`
-
+  
   return (
     <div className="flex gap-6">
       <div className="flex-1 min-w-0 space-y-5">
