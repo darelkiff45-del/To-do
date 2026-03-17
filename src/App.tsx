@@ -28,7 +28,7 @@ export default function App() {
           {/* ── Dashboard (protected — redirect si non authentifié) ── */}
           <Route path="/dashboard" element={<DashboardLayout />}>
             <Route index         element={<DashboardPage />} />
-            <Route path="stats"  element={<StatsPage />} />
+            <Route path="/stats"  element={<StatsPage />} />
           </Route>
 
           {/* ── Fallback ─────────────────────────────────────────────── */}
