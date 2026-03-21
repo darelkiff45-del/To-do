@@ -11,7 +11,7 @@ function Logo() {
       <span style={{ fontSize:17, fontWeight:700, color:'var(--t1)', letterSpacing:'-.03em' }}>TaskFlow</span>
     </div>
   )
-}
+} 
 
 function InputField({ label, type='text', icon, placeholder, value, onChange, error }:
   { label:string; type?:string; icon:string; placeholder:string; value:string; onChange:(v:string)=>void; error?:string }) {

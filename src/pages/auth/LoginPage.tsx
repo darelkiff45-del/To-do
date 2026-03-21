@@ -8,7 +8,7 @@ function InputField({ label, type='text', icon, placeholder, value, onChange, er
     <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
       <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between' }}>
         <label style={{ fontSize:13.5, fontWeight:600, color:'var(--t2)', letterSpacing:'-.01em' }}>{label}</label>
-        {extra}
+        {extra} 
       </div>
       <div style={{ position:'relative' }}>
         <span style={{ position:'absolute', left:16, top:'50%', transform:'translateY(-50%)', fontSize:16, color:'var(--t3)', pointerEvents:'none' }}>{icon}</span>
