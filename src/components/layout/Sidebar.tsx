@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useTaskContext } from '../../context/TaskContext'
 import { useTasks } from '../../hooks/useTasks'
-import type { TaskCategory } from '../../types'
 
 const SIDEBAR_STYLES = `
 .nav-item {
@@ -38,11 +37,23 @@ function useSidebarStyles() {
   }, [])
 }
 
-const CAT_ICON: Record<TaskCategory, string> = {
-  Travail:'🗂️', Personnel:'🌿', Sante:'❤️', Apprentissage:'📊', Finance:'💰',
+const CAT_ICON = {
+  Travail: "💼",
+  Personnel: "🏠",
+  Sante: "💊",
+  Apprentissage: "📚",
+  Finance: "💰",
+  Projets: "📁",
+  Autre: "📌"
 }
-const CAT_COLOR: Record<TaskCategory, string> = {
-  Travail:'#7b8fff', Personnel:'#3ecf8e', Sante:'#f87171', Apprentissage:'#a78bfa', Finance:'#fbbf24',
+const CAT_COLOR = {
+  Travail: "bg-blue-500",
+  Personnel: "bg-green-500",
+  Sante: "bg-red-500",
+  Apprentissage: "bg-purple-500",
+  Finance: "bg-yellow-500",
+  Projets: "bg-indigo-500",
+  Autre: "bg-gray-500"
 }
 
 export default function Sidebar() {

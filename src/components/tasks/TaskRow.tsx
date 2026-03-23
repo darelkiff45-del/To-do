@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import type { TaskRowProps, TaskCategory } from '../../types'
+import type { TaskRowProps } from '../../types'
 
 const TASKROW_STYLES = `
 .task-row {
@@ -39,11 +39,23 @@ function useTaskRowStyles() {
   }, [])
 }
 
-const CAT_ICON: Record<TaskCategory, string> = {
-  Travail:'🗂️', Personnel:'🌿', Sante:'❤️', Apprentissage:'📊', Finance:'💰',
+const CAT_ICON = {
+  Travail: "💼",
+  Personnel: "🏠",
+  Sante: "💊",
+  Apprentissage: "📚",
+  Finance: "💰",
+  Projets: "📁",
+  Autre: "📌"
 }
-const CAT_COLOR: Record<TaskCategory, string> = {
-  Travail:'#7b8fff', Personnel:'#3ecf8e', Sante:'#f87171', Apprentissage:'#a78bfa', Finance:'#fbbf24',
+const CAT_COLOR = {
+  Travail: "bg-blue-500",
+  Personnel: "bg-green-500",
+  Sante: "bg-red-500",
+  Apprentissage: "bg-purple-500",
+  Finance: "bg-yellow-500",
+  Projets: "bg-indigo-500",
+  Autre: "bg-gray-500"
 }
 
 /** TaskRow — Props: task, onToggle, onEdit, onDelete, onClick */

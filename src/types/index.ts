@@ -1,6 +1,15 @@
-export type TaskStatus   = 'pending' | 'done'
+export type TaskStatus = 'pending' | 'done' | 'in-progress'
+
 export type TaskPriority = 'normal' | 'urgent'
-export type TaskCategory = 'Travail' | 'Personnel' | 'Sante' | 'Apprentissage' | 'Finance'
+
+export type TaskCategory =
+  | 'Travail'
+  | 'Personnel'
+  | 'Sante'
+  | 'Apprentissage'
+  | 'Finance'
+  | 'Projets'
+  | 'Autre'
 
 export interface Task {
   id: string
@@ -20,7 +29,11 @@ export interface User {
   email: string
 }
 
-export type FilterStatus = 'all' | 'pending' | 'done'
+export type FilterStatus =
+  | 'all'
+  | 'pending'
+  | 'done'
+  | 'in-progress'
 
 export interface TaskFilters {
   status: FilterStatus
@@ -64,4 +77,12 @@ export interface GuideTableProps {
   title: string
   headers: string[]
   data: string[][]
+}
+
+export type TaskCardProps = {
+  task: Task
+  onToggle: (id: string) => void
+  onEdit: (task: Task) => void
+  onDelete: (id: string) => void
+  onClick: (task: Task) => void
 }
