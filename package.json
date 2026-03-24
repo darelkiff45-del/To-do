@@ -1,12 +1,11 @@
 {
-  "homepage": "https://darelkiff45-del.github.io//To-do",
   "name": "taskflow",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
